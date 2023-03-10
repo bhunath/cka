@@ -1,0 +1,25 @@
+sudo -i
+apt-get update 
+apt-get install -y ca-certificates curl
+
+check Debian Version using 
+lsb_release -a
+lsb_release -d
+
+if Debian Version is earlier than 9 then we need to install the apt-tranport-https
+apt-get install -y apt-transport-https
+
+need to add kubernetes key and repository
+
+mkdir /etc/apt/keyrings/
+sudo curl -fsSLo /etc/apt/keyrings/kubernetes-archive-keyring.gpg https://packages.cloud.google.com/apt/doc/apt-key.gpg
+echo "deb [signed-by=/etc/apt/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
+
+update the repository
+apt-get update
+
+Once Update is done then install Kubectl
+apt-get install -y kubectl
+
+verify kubectl installation using 
+kubectl version
