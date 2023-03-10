@@ -1,0 +1,11 @@
+sudo -i
+apt-get update 
+apt-get install -y ca-certificates curl
+
+check Debian Version using 
+lsb_release -a
+lsb_release -d
+
+if Debian Version is earlier than 9 then we need to install the apt-tranport-https
+apt-get install -y apt-transport-https
+
