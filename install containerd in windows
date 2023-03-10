@@ -1,0 +1,8 @@
+https://github.com/containerd/containerd/blob/main/docs/getting-started.md
+
+Issue	   :	The revocation function was unable to check revocation for the certificate.
+Resolution : 	This error on curl comes when we are using corporate laptops to by pass this we need to use --ssl-no-revoke
+
+
+Run
+Start-Service containerd
