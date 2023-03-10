@@ -1,0 +1,4 @@
+wsl install
+wsl -l
+
+this will install a Linux Subsystem in Windows
