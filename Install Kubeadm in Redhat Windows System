@@ -1,0 +1,7 @@
+Prerequisit
+1. Compatible Linux Host
+2. 2GB Ram or More Per Machine
+3. 2 CPU or More verify using cat /proc/cpuinfo
+4. Full Network connectivity between all machines
+5. Certain Port Need to enabled https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/#check-required-ports
+6. Swap disabled.
